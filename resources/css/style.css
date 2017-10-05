@@ -12,21 +12,22 @@ body {
 }
 
 header {
-    background-image: url(img/bg1.jpg);
+    background-image: url(img/bg1.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
 .main-nav {
+    position: fixed;
     width: 320px;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     transition: background-color 0.5s;
 }
 
 .main-nav:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
     transition: background-color 0.5s;
 }
 
@@ -42,7 +43,7 @@ header {
 .menu {
     text-align: right;
     width: 200px;
-    position: relative;
+    position: absolute;
     left: 50%;
     transform: translate(-50%,0);
     list-style: none;
@@ -81,8 +82,8 @@ header {
 }
 
 .nav-footer {
-    position: relative;
-    bottom: -30%;
+    position: absolute;
+    bottom: 0;
     width: 100%;
     text-align: center;
     list-style: none;
@@ -125,16 +126,19 @@ header {
 }
 
 .content-home {
-    position: absolute;
+    position: fixed;
     top: 80%;
     left: 50%;
     transform: translate(-30%,-50%);
     margin: 0 auto;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black; 
+    
 }
 
 .content-home p {
-    color: white;
-    text-align: center;
+    font-size: 80%;
 }
 
 .content-home p a {
@@ -142,12 +146,13 @@ header {
     display: block;
     width: 50%;
     margin: 30px auto;
-    padding-bottom: 2px;
+    padding: 10px;
     color: #FFFFFF;
     font-size: 150%;
     border: 1px solid white;
     border-radius: 4px;
     transition: background-color 0.5s, border 0.5s;
+    text-shadow: none;
 }
 
 .content-home p a:hover {
