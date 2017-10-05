@@ -130,11 +130,9 @@ header {
     top: 80%;
     left: 50%;
     transform: translate(-30%,-50%);
-    margin: 0 auto;
     text-align: center;
     color: white;
     text-shadow: 1px 1px 2px black; 
-    
 }
 
 .content-home p {
