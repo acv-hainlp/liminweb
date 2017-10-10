@@ -1,2 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.css';
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+}
+
+header {
+    background-image: url(/assets/resources/css/img/bg1.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+nav {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 320px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 100px 0;
+}
+
+.nav-link {
+    padding: .3rem 0rem;
+}
+
+.logo-header {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+nav a {
+    width: 70%;
+    font-size: 70%;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    text-align: right;
+    margin: 0 auto;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.active {
+    border-left: 3px solid white;
+}
+
+.social-nav {
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+}
