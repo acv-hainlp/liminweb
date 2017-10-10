@@ -62,7 +62,7 @@ nav a {
 
 .social-nav {
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     left: 15%;
     color: white;
     width: 70%;
@@ -71,11 +71,43 @@ nav a {
 
 }
 
-.social-nav i {
+.social-nav a {
+    display: inline-block;
+    font-size: 70%;
     border: 1px solid white;
-    width: 50px;
-    height: 50px;
-    padding-top: 15px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin: 0px 5px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.social-nav:after {
+    content: "Copyright 2017";
+    display: block;
+    font-size: 60%;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.home-content {
+    display: block;
+    color: white;
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-30%, -0%);
+    width: 50%;
+    text-align: center;
+    font-size: 80%;
+    text-shadow: 1px 1px black; 
+}
+
+.btn-outline-light:hover {
+    color: black;
+    text-shadow: none
 }
