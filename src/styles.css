@@ -69,7 +69,7 @@ nav a:hover {
     transition: color .5s, border .5s;
 }
 
-.active {
+nav .active {
     border-left: 3px solid white;
 }
 
@@ -128,4 +128,66 @@ nav a:hover {
 .btn-outline-light:hover {
     color: black;
     text-shadow: none
+}
+
+/* Mobile navbar */
+.mobile-nav-bar {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    z-index: 222;
+}
+
+.mobile-nav-bar div a {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 60%;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+.mobile-nav-bar i {
+    width: 40px;
+    height: 40px;
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid white;
+    padding: 10px;
+    float: right;
+    border-radius: 4px;
+}
+
+/* Query Reponsive */
+
+@media screen and (max-width: 1024px) {
+    nav {
+        visibility: hidden;
+    }
+
+    .nav-collapse {
+        visibility: visible;
+    }
+
+    .mobile-nav-bar {
+        visibility: visible;
+    }
+
+    .home-content {
+        transform: translate(-50%, -0%);
+        width: 80%;
+    }
+
+    .logo-header {
+        display: block;
+        float: left;
+        height: 40px;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+    
 }
