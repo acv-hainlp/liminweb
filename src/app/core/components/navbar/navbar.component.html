@@ -2,7 +2,7 @@
 
 <div class="mobile-nav-bar">
     <img class="logo-header img-fluid" src="/assets/resources/img/logo-header.png" alt="Limin Studio Logo">
-    <a href="#" class="mobile-nav-icon" (click)="isCollapsed = !isCollapsed"
+    <a class="mobile-nav-icon" (click)="isCollapsed = !isCollapsed"
     [attr.aria-expanded]="!isCollapsed" aria-controls="mobile-nav"><i class="fa fa-bars" aria-hidden="true"></i></a>
     <div class="clearfix"></div>
     <div id="mobile-nav" [ngbCollapse]="isCollapsed">
