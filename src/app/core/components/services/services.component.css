@@ -1,0 +1,37 @@
+.services {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 400px;
+    transform: translate(-50px,0);
+    width: 70%;
+    height: 1000px;
+    font-size: 80%;
+}
+
+.services .row {
+    margin: 0 auto;
+}
+
+.character, .ux-ui, .weapon {
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.character {
+    background-image: url(https://i.pinimg.com/736x/dd/c3/79/ddc3794abb46316bf83e5184313e9533--game-character-character-concept.jpg);
+    
+}
+
+.ux-ui {
+    background-image: url(https://i.pinimg.com/564x/11/21/59/1121599a5808a835fe06111654d4a071.jpg);
+}
+
+.weapon {
+    background-image: url(https://i.pinimg.com/564x/19/7c/f4/197cf43578fad3a2f77a31378911db45.jpg);
+}
